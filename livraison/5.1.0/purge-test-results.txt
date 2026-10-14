@@ -1,0 +1,10 @@
+Performing Streamed Install
+Success
+Performing Streamed Install
+Success
+INSTRUMENTATION_STATUS: stream=PURGE_TEST_ARMED: emulator-only app data reset
+
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_RESULT: shortMsg=Process crashed.
+INSTRUMENTATION_CODE: 0
+PASS purge Android réelle sur émulateur : base, photos, sauvegardes et préférences supprimées ; APK conservé.
