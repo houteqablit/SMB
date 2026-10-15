@@ -1,0 +1,3 @@
+PASS 58 host checks
+PASS 20 upload protocol and phone confirmation checks
+PASS 20 Apps Script service checks (Google mocks)

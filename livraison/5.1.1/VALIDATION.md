@@ -1,0 +1,13 @@
+# Validation 5.1.1 — compilation 17
+
+58 tests JVM, 20 contrôles du protocole et de la confirmation de téléphone, 20 tests du service Apps Script avec Google simulé, 135 contrôles Android réussis. Signatures v2/v3, alignement, package, version et certificat vérifiés. Installation de mise à jour sur émulateur avec même certificat ; aucune désinstallation requise.
+
+Tests Android : anomalie obligatoire même en consommation positive, nouvelle photo imposée selon politique, options releveur et accès administrateur, demande de deuxième téléphone, refus d’une ressaisie différente et conservation de la nouvelle référence, absence de confirmation pour numéro inchangé, contrats visités seulement, photo ZIP limité aux visites, archive déterministe, purge individuelle isolée, photo partagée préservée, comptes/catalogues conservés, refus de purge globale par un releveur, refus de suppression administrateur, suppression ciblée de releveur et purge globale des tournées sans suppression des comptes. Purges réellement exécutées dans une base SQLite et des fichiers de test isolés ; aucun effacement complet des données applicatives Android n’est utilisé dans cette version.
+
+Régressions : import trois sources, code/libellé anomalies dans XLSX/CSV et sauvegardes, restauration, GPS simulé, double index, hors liste BT/EA, UR majuscule, recherche, chiffrement des clés et clavier numérique sur 360 × 640.
+
+Protocole 2 signé : format XLSX/ZIP inclus dans la signature et l’identifiant ; serveur rétrocompatible avec les anciens envois XLSX. Le client vérifie les capacités du service avant l’envoi des nouveaux formats. Les tests simulés couvrent authentification, intégrité, horloge, formats, déduplication et codes d’erreur. La réception Google réelle n’a pas été vérifiée : le propriétaire doit mettre à jour son Code.gs et son déploiement, puis tester Excel et ZIP.
+
+Déchargement : toutes les visites du compte connecté, toutes campagnes, sélectionnées par date non vide. Aucun contrat non visité envoyé. Excel global et photos ZIP par lots, pas de fichiers temporaires de déchargement dans Téléchargements. Maximum 6 Mio par fichier ; photos regroupées avec budget de 5 Mio, photo individuelle maximale 5 Mio. Les données locales ne sont pas effacées automatiquement. Sur interruption, conserver les données et réessayer ; les fichiers identiques sont dédupliqués.
+
+Limites : tests Android sur émulateur API 26 ; pas de test physique Samsung/Android 12, ni caméra/GPS/Drive réels. Signature de développement ; aucune clé privée ni donnée utilisateur de diagnostic incluse. L’obligation de photo globale ne supprime pas les contrôles de saisie et d’anomalie. Le catalogue doit fournir une anomalie compatible pour les relèves normales si nécessaire.
