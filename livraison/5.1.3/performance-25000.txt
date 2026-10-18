@@ -1,0 +1,10 @@
+INSTRUMENTATION_RESULT: stream=Synthetic Android API26 / 25000 records
+Insert ms: 16401
+SQL count ms: 238
+First page (51 rows) ms: 64
+Archive backfill ms: 501
+Route IDs ms: 425
+Max UI heartbeat wait ms: 899
+PASS 10 Android checks
+
+INSTRUMENTATION_CODE: -1

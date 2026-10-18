@@ -1,0 +1,6 @@
+{
+  "timeZone": "Africa/Casablanca",
+  "exceptionLogging": "NONE",
+  "runtimeVersion": "V8",
+  "oauthScopes": ["https://www.googleapis.com/auth/drive"]
+}
