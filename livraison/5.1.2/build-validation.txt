@@ -1,0 +1,21 @@
+package: name='ma.releve.terrain.v320' versionCode='18' versionName='5.1.2' platformBuildVersionName='15' platformBuildVersionCode='35' compileSdkVersion='35' compileSdkVersionCodename='15'
+minSdkVersion:'26'
+targetSdkVersion:'35'
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): true
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+Signer #1 certificate DN: CN=SmartMobility Development
+Signer #1 certificate SHA-256 digest: 3c9405e0f4580cc0fcac7c60b2e383882ef1bb285d85d4d1110d26ba9b43b844
+Signer #1 certificate SHA-1 digest: c78f623f63a14c33178845727c6409cd7d1c8860
+Signer #1 certificate MD5 digest: 70b909a520efca6f2d84306ea156d368
+Signer #1 key algorithm: RSA
+Signer #1 key size (bits): 3072
+Signer #1 public key SHA-256 digest: ceb8b2b33c7b419b92f0a31cbdba888863254b5fa44e5899cc81e7035a5f2361
+Signer #1 public key SHA-1 digest: d551fca2b5cf4857a459de4e58d1841a9ebc2495
+Signer #1 public key MD5 digest: 1922978d59a5016ee0ae9590802ac329
+Même certificat que 5.1.1 : OK
